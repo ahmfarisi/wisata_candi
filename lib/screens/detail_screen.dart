@@ -83,7 +83,37 @@ class DetailScreen extends StatelessWidget {
                   ],
                 ),
                 // Info Tengah Row 2 : Dibangun
+                const SizedBox(height: 8),
+                Row(
+                  children: [
+                    Icon(Icons.calendar_month, color: Colors.blue),
+                    const SizedBox(width: 8),
+                    const SizedBox(
+                      width: 70,
+                      child: Text(
+                        "Dibangun",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Text(": ${modelCandi.built}"),
+                  ],
+                ),
                 // Info Tengah Row 3 : Tipe
+                const SizedBox(height: 8),
+                Row(
+                  children: [
+                    Icon(Icons.home_outlined, color: Colors.green),
+                    const SizedBox(width: 8),
+                    const SizedBox(
+                      width: 70,
+                      child: Text(
+                        "Tipe",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Text(": ${modelCandi.type}"),
+                  ],
+                ),
                 // Info Bawah
               ],
             ),
