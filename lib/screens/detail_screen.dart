@@ -66,6 +66,24 @@ class DetailScreen extends StatelessWidget {
                   ],
                 ),
                 // Info Tengah
+                // Info Tengah Row 1 : Lokasi
+                const SizedBox(height: 16),
+                Row(
+                  children: [
+                    Icon(Icons.place, color: Colors.red),
+                    const SizedBox(width: 8),
+                    const SizedBox(
+                      width: 70,
+                      child: Text(
+                        "Lokasi",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Text(": ${modelCandi.location}"),
+                  ],
+                ),
+                // Info Tengah Row 2 : Dibangun
+                // Info Tengah Row 3 : Tipe
                 // Info Bawah
               ],
             ),
