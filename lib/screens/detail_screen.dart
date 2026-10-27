@@ -10,7 +10,7 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          // Detail Header
+          // DETAIL HEADER
           Stack(
             children: [
               // Gambar Candi
@@ -42,8 +42,35 @@ class DetailScreen extends StatelessWidget {
               ),
             ],
           ),
-          // Detail Info
-          // Detail Gallery
+          // DETAIL INFO
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Info Atas
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      modelCandi.name,
+                      style: TextStyle(
+                        fontSize: 26,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.favorite_border),
+                    ),
+                  ],
+                ),
+                // Info Tengah
+                // Info Bawah
+              ],
+            ),
+          ),
+          // DETAIL GALLERY
         ],
       ),
     );
