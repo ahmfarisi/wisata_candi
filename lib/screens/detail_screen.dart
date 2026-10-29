@@ -114,11 +114,39 @@ class DetailScreen extends StatelessWidget {
                     Text(": ${modelCandi.type}"),
                   ],
                 ),
+                // Garis Pemisah
+                const SizedBox(height: 16),
+                Divider(color: Colors.deepPurple.shade100),
+                const SizedBox(height: 16),
                 // Info Bawah
+                const Text(
+                  "Deskripsi",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 16),
+                Text(modelCandi.description),
               ],
             ),
           ),
           // DETAIL GALLERY
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Garis Pemisah
+                const SizedBox(height: 16),
+                Divider(color: Colors.deepPurple.shade100),
+                const SizedBox(height: 16),
+                // Judul Gallery
+                const Text(
+                  "Gallery",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 16),
+              ],
+            ),
+          ),
         ],
       ),
     );
